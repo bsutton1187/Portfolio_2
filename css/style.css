@@ -1,0 +1,384 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+  font-family: 'Raleway', sans-serif;
+  margin: 0;
+  padding: 0;
+  font-size: 16pt;
+  background-image: url('../images/CityRiverPicture.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+}
+img {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+  width: 250px;
+  height: auto;
+
+}
+
+img:hover {
+  box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+}
+
+
+h1{
+  font-size: 3em;
+  text-align: center;
+  line-height: 2;
+  text-shadow:
+      2px 2px 0px lightgray,
+      4px 4px 0px rgba(0, 0, 0, 0.2);
+}
+
+h2{
+  font-size: 2em;
+  text-align: center;
+  padding: 5px;
+  background: lightgray;
+  border-bottom: 3px solid darkred;
+}
+h3{
+  font-size: 1em;
+  text-align: center;
+  background: lightgray;
+}
+p {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 15px;
+  padding-right:15px;
+  background-color: lightgray;
+
+}
+form{
+  background-color: lightgray;
+}
+
+.skipcont a{
+  background: white;
+  left: 0;
+  padding: 6px;
+  position: absolute;
+  top: -40px;
+  -webkit-transition: top 1s ease-out;
+  transition: top 1s ease-out;
+  z-index: 1;
+}
+
+.skipcont a:focus{
+  top:0;
+}
+
+/**:focus{
+  border: 2px solid black;
+}*/
+
+.contact {
+  background-color: lightgray;
+  text-align: center;
+}
+
+
+footer{
+  background-color: darkred;
+  color: black;
+  grid-column: 1 / -1;
+  grid-row: 7 / auto;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+}
+
+.head{
+  height: 25px;
+  min-height: 150px;
+  padding: 10px 50px;
+}
+
+@media screen and (min-width: 300px)(prefers-reduced-motion: reduce){
+  html{
+      scroll-behavior: auto;
+  }
+  /* Sections */
+  .people{
+    min-height: 500px;
+    display: -webkit-box;
+    display: flex;
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+            align-items: center;
+  }
+  .places{
+    min-height: 500px;
+    display: -webkit-box;
+    display: flex;
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+            align-items: center;
+  }
+  .food{
+    min-height: 500px;
+    display: -webkit-box;
+    display: flex;
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+            align-items: center;
+  }
+
+  /* Gallery */
+
+  .gallery{
+    display: -webkit-box;
+    display: flex;
+    flex-wrap: wrap;
+    -webkit-box-align: start;
+            align-items: center;
+    -webkit-box-pack: center;
+            justify-content: center;
+    min-height: 500px;
+    padding: 5px;
+  }
+
+  /* Navigation Bar */
+
+  .scroll-nav{
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+            align-items: left;
+    background-color: white;
+    border-bottom: 3px solid darkred;
+    position: fixed;
+    border-radius: 4px;
+  }
+
+  .nav-links{
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+            justify-content: space-between;
+    list-style: none;
+  }
+
+  .nav-item a{
+    color: black;
+    text-decoration: none;
+  }
+
+  .nav-item a:hover a:focus {
+    color: darkred;
+    text-decoration: underline;
+    -webkit-text-decoration-style: dotted;
+            text-decoration-style: dotted;
+  }
+  .nav-item a:active,
+  .nav-item .active a{
+    color: darkred;
+    text-decoration: underline;
+  }
+
+}
+@media screen and (min-width: 500px){
+
+  /* Sections */
+  .people{
+    min-height: 500px;
+    display: -webkit-box;
+    display: flex;
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+            align-items: center;
+  }
+  .places{
+    min-height: 500px;
+    display: -webkit-box;
+    display: flex;
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+            align-items: center;
+  }
+  .food{
+    min-height: 500px;
+    display: -webkit-box;
+    display: flex;
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+            align-items: center;
+  }
+
+  /* Gallery! */
+
+  .gallery{
+    display: -webkit-box;
+    display: flex;
+    flex-wrap: wrap;
+    -webkit-box-align: start;
+            align-items: top;
+    -webkit-box-pack: center;
+            justify-content: center;
+    min-height: 500px;
+    padding: 5px;
+  }
+
+  /* Navigation Bar */
+
+  .scroll-nav{
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+            align-items: left;
+    background-color: white;
+    border-bottom: 3px solid darkred;
+    position: fixed;
+    border-radius: 4px;
+  }
+
+  .scroll-nav{
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+            justify-content: space-between;
+    list-style: none;
+  }
+
+  .nav-item a{
+    color: black;
+    text-decoration: none;
+  }
+
+  .nav-item a:hover a:focus {
+    color: darkred;
+    text-decoration: underline;
+    -webkit-text-decoration-style: dotted;
+            text-decoration-style: dotted;
+  }
+  .nav-item a:active,
+  .nav-item .active a{
+    color: darkred;
+    text-decoration: underline;
+  }
+
+}
+
+
+@media screen and (min-width: 850px){
+
+  /* Sections */
+  .people{
+    min-height: 500px;
+    display: -webkit-box;
+    display: flex;
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+            align-items: center;
+  }
+  .places{
+    min-height: 500px;
+    display: -webkit-box;
+    display: flex;
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+            align-items: center;
+  }
+  .food{
+    min-height: 500px;
+    display: -webkit-box;
+    display: flex;
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+            align-items: center;
+  }
+  /* Navigation Bar */
+
+  .scroll-nav{
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+            align-items: center;
+    background: white;
+    border-bottom: 3px solid darkred;
+    position: fixed;
+  }
+
+  .scroll-nav{
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+            flex-direction: row;
+    list-style: none;
+  }
+
+  .scroll-nav a{
+    padding: 10px;
+    color: black;
+    text-decoration: none;
+  }
+
+  .scroll-nav a:hover, a:focus {
+    color: darkred;
+    text-decoration: underline;
+    -webkit-text-decoration-style: dotted;
+            text-decoration-style: dotted;
+  }
+
+.nav-item a:active,
+.nav-item .active a{
+  color: darkred;
+  text-decoration: underline;
+}
+
+}
+
+@media print {
+  img{
+    display: none;
+  }
+
+  .navi{
+    display: none;
+  }
