@@ -152,7 +152,7 @@ footer{
 
   /* Navigation Bar */
 
-  .scroll-nav{
+  .scroll-nav__list{
     display: -webkit-box;
     display: flex;
     -webkit-box-orient: vertical;
@@ -168,7 +168,7 @@ footer{
     border-radius: 4px;
   }
 
-  .nav-links{
+  .scroll-nav__list{
     display: -webkit-box;
     display: flex;
     -webkit-box-orient: vertical;
@@ -179,22 +179,24 @@ footer{
     list-style: none;
   }
 
-  .nav-item a{
+  .scroll-nav a{
+    padding: 10px;
     color: black;
     text-decoration: none;
   }
 
-  .nav-item a:hover a:focus {
+  .scroll-nav a:hover, a:focus {
     color: darkred;
     text-decoration: underline;
     -webkit-text-decoration-style: dotted;
             text-decoration-style: dotted;
   }
-  .nav-item a:active,
-  .nav-item .active a{
-    color: darkred;
-    text-decoration: underline;
-  }
+
+.nav-item a:active,
+.nav-item .active a{
+  color: darkred;
+  text-decoration: underline;
+}
 
 }
 @media screen and (min-width: 500px){
@@ -247,7 +249,7 @@ footer{
 
   /* Navigation Bar */
 
-  .scroll-nav{
+  .scroll-nav__list{
     display: -webkit-box;
     display: flex;
     -webkit-box-orient: vertical;
@@ -263,7 +265,7 @@ footer{
     border-radius: 4px;
   }
 
-  .scroll-nav{
+  .scroll-nav__list{
     display: -webkit-box;
     display: flex;
     -webkit-box-orient: vertical;
@@ -274,22 +276,24 @@ footer{
     list-style: none;
   }
 
-  .nav-item a{
+  .scroll-nav a{
+    padding: 10px;
     color: black;
     text-decoration: none;
   }
 
-  .nav-item a:hover a:focus {
+  .scroll-nav a:hover, a:focus {
     color: darkred;
     text-decoration: underline;
     -webkit-text-decoration-style: dotted;
             text-decoration-style: dotted;
   }
-  .nav-item a:active,
-  .nav-item .active a{
-    color: darkred;
-    text-decoration: underline;
-  }
+
+.nav-item a:active,
+.nav-item .active a{
+  color: darkred;
+  text-decoration: underline;
+}
 
 }
 
@@ -329,7 +333,7 @@ footer{
   }
   /* Navigation Bar */
 
-  .scroll-nav{
+  .scroll-nav__list{
     display: -webkit-box;
     display: flex;
     -webkit-box-orient: horizontal;
@@ -344,7 +348,7 @@ footer{
     position: fixed;
   }
 
-  .scroll-nav{
+  .scroll-nav__list{
     display: -webkit-box;
     display: flex;
     -webkit-box-orient: horizontal;
